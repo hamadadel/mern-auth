@@ -1,5 +1,6 @@
 async function signup(req, res) {
   try {
+    console.log(req.body);
     return res.json({ message: 'api/v1/auth/signup' });
   } catch (error) {
     res.status(500).json({ message: 'something went wrong', error });
